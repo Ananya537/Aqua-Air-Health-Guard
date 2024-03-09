@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Realtime Database Example</title>
+</head>
+<body>
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script>
+    // Your Firebase configuration
+    firebaseConfig = {
+            "apiKey": "AIzaSyD4XGPgqt21zLgYLLeYEId1rHtZ4lRpX_U",
+            "authDomain": "iot-aqua-air-health-gaurd.firebaseapp.com",
+            "databaseURL": "https://iot-aqua-air-health-gaurd-default-rtdb.firebaseio.com",
+            "projectId": "iot-aqua-air-health-gaurd",
+            "storageBucket": "iot-aqua-air-health-gaurd.appspot.com",
+            "messagingSenderId": "464403737628",
+            "appId": "1:464403737628:web:a3e2c56f06ab5b1b35c3d9",
+            "measurementId": "G-NFT9TSH7RR"
+    }
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Reference to the data in the Realtime Database
+    const database = firebase.database();
+    const dataRef = database.ref('water_readings');
+
+    // Listen for changes and log data to the console
+    dataRef.on('value', (snapshot) => {
+      const data = snapshot.val();
+      const phValue = data["-Nr0vgxImVOh8H9yo85J"].pH; // Check if data is not null before accessing 'ph'
+  console.log("pH value:", ph);
+    });
+  </script>
+</body>
+</html>

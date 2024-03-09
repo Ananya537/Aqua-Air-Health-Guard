@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Aqua-Air Health Guard</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            canvas {
+                border: 1px solid #000;
+                display: block;
+            }
+
+            .custom-box {
+            background-color: #dadef3;
+            border: 1px solid #0b0b0c;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Open Sans', sans-serif;
+            font-size: medium;
+
+        }
+
+        .custom-box strong {
+            font-weight: 600;
+            color: #6c757d; 
+        }
+
+   
+        .custom-box:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        </style>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="../../static/index/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../static/index/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../static/index/css/fontAwesome.css">
+        <link rel="stylesheet" href="../../static/index/css/light-box.css">
+        <link rel="stylesheet" href="../../static/index/css/owl-carousel.css">
+        <link rel="stylesheet" href="../../static/index/css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="../../static/index/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+
+<body>
+
+    <!-- ============================== HEADER ======================================= -->
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        
+        <div id="main-nav" class="collapse navbar-collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#featured">Current environment</a></li>
+                    <li><a href="#projects">About u</a></li>
+                    <li><a href="#video">Visual representation</a></li>
+                    <li><a href="#blog">Health effects</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ============================= Main-Body ===================================== -->
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <a href="#">Aqua<em>-air</em></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#top">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#featured">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Current environment
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        About U 
+                    </a>
+                </li>
+                <li>
+                    <a href="#video">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Visual representation
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Health effects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <ul class="social-icons">
+            <div>
+                <a style="color: aliceblue;" href="{% url 'login' %}">Sign Out</a><br><br>
+            </div>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="slider">
+        <div class="Modern-Slider content-section" id="top">
+
+            <!-- Item-1 -->
+            <div class="item item-1">
+                <div class="img-fill">
+                <div class="image"></div>
+                <div class="info">
+                    <div>
+                        <h1>Air Quality<br>Monitoring</h1>
+                        <p><i>"Tracking the air we breathe, safeguarding our health."</i></p> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item-2 -->
+            <div class="item item-2">
+                <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                    <div>
+                        <h1>Water Quality<br>Analysis</h1>
+                        <p><i>"Ensuring purity, drop by drop,<br> for a healthier tomorrow."</i></p>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item-3 -->
+            <div class="item item-3">
+                <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                    <div>
+                        <h1>Impact on<br>US</h1>
+                        <p><i>"In the air we breathe, in the water we share,<br>
+                        A healthy environment shows how much we care."</i></p>
+                        
+                        <div class="white-button button">
+                            <a href="#featured">Learn More</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="page-content">
+        <section id="featured" class="content-section" id="featured-content-1">
+            <div class="section-heading" >
+            
+            
+                <h1>Our<br><em>Environment</em></h1>
+
+                <p><i>"Good environment, good health, hand in hand,<br>
+                    With clean air and water, we thrive and stand."
+                    <a href="{% url 'page1' %}" style="margin-left: 120px;"> AQI graph </a>
+                </i></p>
+                
+            </div>
+            <br>
+            <div><i><strong><h2 style="color: rgb(14, 45, 140); font-weight: 600">Air Quality Sensors</h2></strong></i></div><br>
+            <div class="section-content">
+                <div class="owl-carousel owl-theme">
+                    
+                    <div class="item">
+                        <div class="image">
+                            <div class="card">
+                                <img src="../../static/index/img/featured_2.png" alt="" >
+                                
+                                    <div class="card-body animated-value" data-reading="ch4">
+                                        0 
+                                    </div>
+                                    ppm
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>Methane</h4>
+                            <span>(CH4)</span>
+                            <p>Primarily emitted from agricultural practices and fossil fuel extraction, 
+                                methane not only intensifies global warming but also poses health risks 
+                                such as respiratory issues and heat-related illnesses due to its 
+                                role in climate change.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <div class="card">
+                                <img src="../../static/index/img/featured_1.png" alt="" >
+                                
+                                    <div class="card-body animated-value" data-reading="co">
+                                        0 
+                                    </div>
+                                    ppm
+                                
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>Carbon Monoxide</h4>
+                            <span>(CO)</span>
+                            <p>Generated by combustion processes, 
+                                CO contributes to air pollution, 
+                                impairing lung function and increasing the risk of 
+                                cardiovascular diseases and respiratory ailments 
+                                in exposed populations.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <div class="card">
+                                <img src="../../static/index/img/featured_4.jpeg" alt=""  >
+                                
+                                    <div class="card-body animated-value" data-reading="nh3">
+                                        0 
+                                    </div>
+                                    ppm
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>Carbon Dioxide</h4>
+                            <span>(CO2)</span>
+                            <p>A byproduct of industrial activities and transportation, 
+                                CO2 pollution is a major driver of climate change, posing 
+                                significant health threats through extreme weather events, 
+                                food insecurity, and the spread of infectious diseases.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="image">
+                            <div class="card">
+                                <img src="../../static/index/img/featured_3.png" alt="" >
+                                
+                                    <div class="card-body animated-value" data-reading="co2">
+                                        0 
+                                    </div>
+                                    ppm
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>Ammonia</h4>
+                            <span> (NH3)</span>
+                            <p>Originating mainly from agricultural activities, ammonia pollution 
+                                leads to respiratory problems, exacerbates asthma, and contributes 
+                                to the formation of harmful particulate matter, deteriorating air 
+                                quality and public health.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <a href="https://www.aqi.in/"><h4 style="text-align: right;"><i>Get live aqi</i></h4></a>
+
+        </section> 
+
+<!-- ================================================================================= -->
+        <section id="featured" class="content-section" id="featured-content-1">
+                
+                <div><i><strong><h2 style="color: rgb(14, 45, 140); font-weight: 600">Water Quality Sensors</h2></strong></i></div><br>
+
+                <div class="section-content">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image">
+                                <div class="card">
+                                    <img src="../../static/index/img/featured_5.jpg" alt="" >
+                                    
+                                        <div class="card-body animated-value" data-reading="turbidity">
+                                            0 
+                                        </div>
+                                        NTU
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Turbidity</h4>
+                                <span>Water sensor</span>
+                                <p>Caused by sedimentation and runoff, elevated turbidity levels 
+                                    in water sources disrupt aquatic ecosystems, degrade water quality, 
+                                    and increase the risk of waterborne illnesses, affecting both 
+                                    environmental health and human well-being.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <div class="card">
+                                    <img src="../../static/index/img/featured_6.jpeg" alt=""  >
+                                    
+                                        <div class="card-body animated-value" data-reading="pH">
+                                            0 
+                                        </div>
+                                        pH
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>pH</h4>
+                                <span>pH values</span>
+                                <p>Altered pH levels in water bodies due to pollution 
+                                    from sources like acid rain and industrial discharge 
+                                    harm aquatic life, degrade water quality, and may pose 
+                                    health risks to humans through contaminated drinking water 
+                                    and reduced availability of safe recreational water resources.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <div class="card">
+                                    <img src="../../static/index/img/featured_8.jpg" alt="" >
+                                    
+                                        <div class="card-body animated-value" data-reading="temperature">
+                                            0 
+                                        </div>
+                                        °C
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Temperature</h4>
+                                <span>Water sensor</span>
+                                <p>Elevated temperature levels in natural water bodies, 
+                                    often caused by factors such as climate change and human 
+                                    activities, pose significant challenges to aquatic ecosystems 
+                                    and water quality. Increased temperatures can disrupt 
+                                    the delicate balance of aquatic life, leading 
+                                    to adverse effects on biodiversity and ecosystem health. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+<!-- ================================================================================= -->
+                
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>About <em>U</em></h1>
+                    <!-- <p>Praesent pellentesque efficitur magna, 
+                    <br>sed pellentesque neque malesuada vitae.</p> -->
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-12">
+                                    <h1>Health Details for<em>U</em></h1><br>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-12">
+                                    <select name="source" id="selectOption1" style="margin-bottom:25px; border-radius: 25px; border-width: 2px; width: 350px; height: 50px;">
+                                        <option value="normal" selected>No Pre-existing Conditions</option>
+                                        <option value="respiratory">Respiratory Problems</option>
+                                        <option value="cardiovascular">Cardiovascular Diseases</option>
+                                        <option value="neurological">Neurological Disorder</option>
+                                        <option value="diabetes">Diabetes</option>
+                                        <option value="obesity">Obesity</option>
+                                        <option value="autoimmuno">Autoimmuno Diseases</option>
+                                        <option value="kidney">Chronic Kidney Disorder</option>
+                                        <option value="genetics">Genetic Disorder</option>
+                                        <option value="liver">Liver Diseases</option>
+                                        <option value="aging">Aging</option>
+                                        <option value="pregnancy">Pregnancy</option>
+                                        <option value="mentalhealth">Mental health Disorder</option>
+                                        <option value="sleep">Sleep Disorder</option>
+                                        <option value="neuromuscular">Neuromuscular Disorders</option>
+                                        <option value="skin">Dermatological Disorders</option>
+                                        <option value="gastrointestinal">Gastrointestinal Disorders</option>
+                                    </select><br>
+                                    <div id="dropdown-details-container">
+                                        <!-- Details will be rendered here -->
+                                    </div>
+                                </div>
+                                <i><a style="text-align: left;" href="{% url 'problemsTable' %}">To know more</a></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>            
+            </section>
+
+
+            <section id="video" class="content-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h1><em>Visual</em> representation.</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <canvas id="myCanvas" width="750" height="750" style="width: 500px;"></canvas>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="blog" class="content-section">
+                <div class="section-heading">
+                    <h1>Community<br><em>Entries</em></h1>
+                    <p>Add your ideas and let's create 
+                    <br>a community to cherish.</p>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                              <li><a href="#tab1" class="active">Notifications</a></li>
+                              <li><a href="#tab2">Features</a></li>
+                              <li><a href="#tab3">Air Pollution  </a></li>
+                              <li><a href="#tab4">Water Pollution</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1" >
+                                    <ul id="comm1" style="align-content: justify;">                                            
+                                    </ul>
+                                    <a href="{% url 'communityTable' %}">Show old posts</a>
+                                </div>
+                                
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="../../static/index/img/f1.jpeg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Environmental Monitoring System</h4>
+                                                    <p>The project focuses on creating an environmental monitoring system that continuously measures air and water quality parameters such as pollutants, pH levels, and other relevant factors. This involves deploying sensors and data collection mechanisms to gather real-time data about the quality of the environment.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="../../static/index/img/f2.jpeg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Health Impact Assessment</h4>
+                                                    <p>The collected environmental data is analyzed to assess its potential health impacts on individuals exposed to the environment. This assessment involves correlating environmental quality parameters with known health effects and identifying potential risks to human health.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="../../static/index/img/f3.jpeg" alt="">
+                                                <div class="text-content">
+                                                    <h4>Alert System for Vulnerable Individuals</h4>
+                                                    <p>An alert system is implemented to notify individuals, particularly those with pre-existing health conditions or vulnerabilities, about environmental conditions that may pose risks to their health. This involves setting threshold values for environmental parameters and triggering alerts when these thresholds are exceeded, indicating potentially harmful conditions. Additionally, the system provides information about the specific health impacts associated with the observed environmental conditions, enabling individuals to take appropriate preventive measures.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="https://i.cbc.ca/1.7120194.1708457352!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/419-simcoe-london-ont.jpg" alt="" width="306px" height="230px">
+                                                <div class="text-content">
+                                                    <h4>4 taken to hospital after carbon monoxide leak at multi-unit home in London</h4>
+                                                    <span>Feb 20, 2024</span>
+                                                    <p>Four people were taken to hospital, among 16 forced to vacate a multi-unit home in London's SoHo neighbourhood after a carbon monoxide leak was detected Tuesday morning. First responders were notified of the leak at around 9 a.m. ET of the leak. Six people were treated by paramedics.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://www.cbc.ca/news/canada/london/4-taken-to-hospital-after-carbon-monoxide-leak-at-multi-unit-home-in-london-1.7120130">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="https://www.hindustantimes.com/ht-img/img/2023/12/27/550x309/Police-personnel-stand-guard-outside-a-plant-of-Co_1703705397825.jpg" alt="" width="306px" height="230px">
+                                                <div class="text-content">
+                                                    <h4>Ammonia gas leak at Tamil Nadu unit, over 50 hospitalised</h4>
+                                                    <span>Dec 28, 2023</span>
+                                                    <p>Government officials said that they were alerted at 12.45 am when gas bubbles were seen coming out of the pipeline near the shore. Simultaneously, local residents from villages including Periakuppam and Chinnakuppam, reported a pungent odour and complained to the city police.</p> 
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://www.hindustantimes.com/india-news/ammonia-gas-leak-at-tamil-nadu-unit-over-50-hospitalised-101703705403945.html">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img src="https://i.guim.co.uk/img/media/ce39a77fa5892ccd7bd6e7ee402289a9eb316805/0_273_4000_2400/master/4000.jpg?width=620&dpr=2&s=none" alt="" width="306px" height="230px">
+                                                <div class="text-content">
+                                                    <h4>It's impossible to breathe: Delhi's rubbish dumps drive sky-high methane emissions</h4>
+                                                    <span>Feb 12, 2024</span>
+                                                    <p>Leaking, 'super emitter' landfills of India's capital are a global hotspot for the potent greenhouse gas, according to satellite data. Revealed: The 1,200 methane leaks from waste dumps trashing the planet</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://www.theguardian.com/world/2024/feb/12/delhi-india-rubbish-dumps-sky-high-methane-emissions">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img src="https://www.hindustantimes.com/ht-img/img/2023/10/04/550x309/The-water-samples-from-44-localities-showed-presen_1696409582878.jpg" alt="" width="306px" height="230px">
+                                                <div class="text-content">
+                                                    <h4>Residents of 44 localities in Meghalaya’s capital consume toxic water: Report</h4>
+                                                    <span>Oct 04, 2023</span>
+                                                    <p>A report from the State Food Testing Laboratory in Meghalaya's capital Shillong has revealed that residents in 44 major localities are consuming hazardous water. The water samples from these localities showed the presence of harmful organisms and high levels of iron, indicating that the water is unsafe to drink.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://www.hindustantimes.com/cities/others/residents-of-44-localities-in-meghalaya-s-capital-consume-toxic-water-report-101696409589519.html">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>                                
+                                        <li>
+                                            <div class="item">
+                                                <img src="https://static.toiimg.com/thumb/msid-102223205,imgsize-550457,width-400,resizemode-4/102223205.jpg" alt="" width="306px" height="230px">
+                                                <div class="text-content">
+                                                    <h4>Drinking water faces turbidity challenge amid incessant rain</h4>
+                                                    <span>Jun 29, 2023</span>
+                                                    <p>Incessant rains have led to increased inflows into drinking water sources, resulting in higher turbidity which in turn has caused concern among people about pollution in potable water supplied to homes.</p>
+                                                    
+                                                    <div class="accent-button button">
+                                                        <a href="https://timesofindia.indiatimes.com/city/hyderabad/drinking-water-faces-turbidity-challenge-amid-incessant-rains/articleshow/102221614.cms">Continue Reading</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </section> 
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="section-content">
+                    <form id="blogForm">
+                        <div class="mb-3">
+                          <label for="title" class="form-label" style="font-size: 20px;">Title</label>
+                          <input type="text" class="form-control" id="title" placeholder="Enter title">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                          <label for="data" class="form-label" style="font-size: 20px;">Blog Post</label>
+                          <input type="text" class="form-control" id="data" placeholder="Enter data">
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="submitBlog()">Submit</button>
+                      </form>
+                </div>
+            </section>
+            
+            <section id="contact" class="content-section">
+                <div id="map">
+                
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.446884236374!2d77.5693927!3d13.134187599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae18a5c54ece35%3A0x49c4c47a68a60b9c!2sBMS%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1708509997386!5m2!1sen!2sin" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1>Contact<br><em>Aqua-Air</em></h1>
+                        
+                    </div>
+                    <div class="section-content">
+                        <form id="contact" action="mailto:aquaairhealth@gmail.com" method="post" enctype="text/plain">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-4">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="footer">
+                <p></p>
+            </section>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../static/index/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="../../static/index/js/vendor/bootstrap.min.js"></script>
+    
+    <script src="../../static/index/js/plugins.js"></script>
+    <script src="../../static/index/js/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+
+        //=========================================================================//
+
+        
+        firebaseConfig = {
+                "apiKey": "enter-api-key",
+                "authDomain": "enter-domain",
+                "databaseURL": "enter-database-URL",
+                "projectId": "enter-projectId",
+                "storageBucket": "enter-storageBucket",
+                "messagingSenderId": "enter-messagingSenderId",
+                "appId": "enter-appId",
+                "measurementId": "enter-measurementId"
+            }
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            // Reference to the data in the Realtime Database
+            const database = firebase.database();
+            const dataRef = database.ref('aqua_air_readings');
+            
+
+        
+            const startAnimation = ( coValue, ch4Value, co2Value, nh3Value, turValue, pHValue, tempValue) => {
+            const counters = document.querySelectorAll('.animated-value');
+            const values = [ch4Value, coValue, co2Value, nh3Value, pHValue, turValue, tempValue];
+            const speed = 1000000; // Speed of the animation
+
+            counters.forEach((counter, index) => {
+                const animate = () => {
+                    const value = values[index]; // Get the pH value
+                    const data = +counter.innerText;
+                    
+                    // Calculate the increment for this animation frame
+                    const increment = Math.ceil(value / (speed / 10)); 
+
+                    if (data < value) {
+                        // Add a delay before updating the counter
+                        setTimeout(() => {
+                            counter.innerText = Math.min(data + increment, value); 
+                            requestAnimationFrame(animate); // Call animate again on the next repaint cycle
+                        }, 10); // Adjust the delay time as needed
+                    } else {
+                        counter.innerText = value; // Ensure the final value is correct
+                    }
+                };
+                animate(); // Start the animation
+            });
+        };
+
+        // Function to check if the element is in viewport
+        const isInViewport = element => {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        const counters = document.querySelectorAll('.animated-value');
+
+        // Function to handle scroll events
+        const handleScroll = () => {
+            counters.forEach(counter => {
+                if (isInViewport(counter)) {
+                    dataRef.once('value', (snapshot) => {
+                        snapshot.forEach(function(childSnapshot){
+                            var data = childSnapshot.val();
+                            const ch4Value = parseFloat(data.ch4);
+                            const coValue = parseFloat(data.co);
+                            const co2Value = parseFloat(data.co2);
+                            const nh3Value = parseFloat(data.nh3);
+                            const pHValue = parseFloat(data.pH); 
+                            const turValue = parseFloat(data.turbidity);
+                            const tempValue = parseFloat(data.temperature);
+                            if (!isNaN(pHValue)) {
+                                startAnimation(coValue, ch4Value, co2Value, nh3Value, pHValue, turValue, tempValue); // Start animation with the retrieved pH value
+                            } else {
+                                console.error("pH value is not a valid number.");
+                            }
+                        });
+                    });
+                    window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener once animation starts
+                }
+            });
+        };
+
+        // Attach scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+//====================================================================================//
+
+
+const data = [
+    ['normal', 1000, 2000, 36, 199, 50, 100, 2, 10, 7.0, 7.0, 20, 50],
+    ['respiratory', 700, 10000, 95, 2000, 50, 2000, 60, 1000, 6.5, 8.0, 5, 1000],
+    ['cardiovascular',  850, 10000, 80, 2000, 70, 2000, 75, 1000, 5.5, 7.8, 5, 100],
+    ['neurological', 1000, 10000, 110, 2000, 110, 2000, 90, 1000, 6.0, 8.0, 20, 1000],
+    ['diabetes',  960, 10000, 110, 2000, 90, 2000, 60, 1000, 6.5, 8.5, 14, 1000],
+    ['obesity',  1050, 10000, 110, 2000, 100, 2000, 110, 1000, 6.0, 8.0, 19, 1000],
+    ['autoimmuno',  1200, 10000, 130, 2000, 80, 2000, 120, 1000, 6.0, 8.0, 15, 1000],
+    ['kidney',  1300, 10000, 115, 2000, 120, 2000, 200, 1000, 6.5, 8.5, 25, 1000],
+    ['genetics', 1600, 10000, 115, 2000, 150, 2000, 300, 1000, 6.0, 8.0, 25, 1000],
+    ['liver',  1200, 10000, 115, 2000, 100, 2000, 250, 1000, 6.5, 8.5, 20, 1000],
+    ['aging',  1200, 10000, 90, 2000, 120, 2000, 250, 1000, 6.0, 8.0, 15, 1000],
+    ['pregnancy',  1200, 10000, 85, 2000, 120, 2000, 100, 1000, 6.5, 7.9, 5, 1000],
+    ['mentalhealth', 17, 1250, 10000, 85, 2000, 110, 2000, 90, 1000, 6.0, 8.0, 20, 1000],
+    ['sleep', 1150, 10000, 100, 2000, 110, 2000, 90, 1000, 6.5, 8.5, 15, 1000],
+    ['neuromuscular', 1700, 10000, 100, 2000, 110, 2000, 190, 1000, 6.5, 8.5, 5, 1000],
+    ['skin', 1700, 10000, 100, 2000, 60, 2000, 190, 1000, 6.5, 8.5, 25, 1000],
+    ['gastrointestinal', 1700, 10000, 100, 2000, 60, 2000, 190, 1000, 6.5, 8.5, 20, 1000]
+];
+
+
+document.getElementById('selectOption1').addEventListener('change', function() {
+const selectedDisease = this.value;
+    dataRef.once('value', (snapshot) => {
+        snapshot.forEach(function(childSnapshot){
+            var data = childSnapshot.val();
+        
+            const ch4Value1 = parseFloat(data.ch4);
+            const coValue1 = parseFloat(data.co);
+            const co2Value1 = parseFloat(data.co2);
+            const nh3Value1 = parseFloat(data.nh3);
+            const pHValue1 = parseFloat(data.pH); // Convert pH to a number
+            const turValue1 = parseFloat(data.turbidity);
+            if (!isNaN(pHValue1)) {
+                checkDisease(selectedDisease,co2Value1,coValue1,nh3Value1,ch4Value1,pHValue1,turValue1);     
+                
+            
+            } else {
+                console.error("pH value not found or data is invalid.");
+            }
+        });
+    });
+});
+
+
+
+tplname = []
+checkstate = []
+function checkDisease(disease,co2,co,nh3,ch4,ph,turbidity) {
+    data.forEach(item => {
+        if(item[0] === disease) {
+
+            if(item[1] <= co2 && co2 <= item[2]) {
+                co2state = "CO2 level is normal\n";
+            } else {
+                co2state = "CO2 level is too high";
+            }
+
+            if(item[3] <= co && co <= item[4]) {
+                costate = "CO level is safe\n";
+            } else {
+                costate = "CO level is not safe";
+            }
+
+            if(item[5] <= nh3 && nh3 <= item[6]) {
+                nh3state = "NH3 level is safe\n";
+            } else {
+                nh3state = "NH3 level is not safe";
+            }
+
+            if(item[7] <= ch4 && ch4 <= item[8]) {
+                ch4state = "CH4 level is safe\n";
+            } else {
+                ch4state = "CH4 level is not safe";
+            }
+
+            if(item[9] <= ph && ph <= item[10]) {
+                pHstate = "pH level is safe\n";
+            } else {
+                pHstate = "pH level is not safe";
+            }
+
+            if(item[11] <= turbidity && turbidity <= item[12]) {
+                turstate = "Turbidity level is safe\n";
+            } else {
+                turstate = "Turbidity level is not safe";
+            }
+
+            var dynamicContent = document.getElementById('dropdown-details-container');
+            if ( dynamicContent.length != 0 ){
+                dynamicContent.removeChild(dynamicContent.lastChild);
+            }
+            
+            
+            getLinesFromDisease(disease);
+
+
+        // Create a paragraph element
+            var paragraph = document.createElement('p');
+
+            // Set text content using variables
+            checkStateData = "<h4 style='font-family: Poppins; color:black;'>" + 
+                        "<div class='col-lg-12 element custom-box'><strong>CO2:</strong> <span style='color: red;'>" + co2state + "</span></div>" +
+                        "<div class='col-lg-12 element custom-box'><strong>CO:</strong> <span style='color: red;'>" + costate + "</span></div>" +
+                        "<div class='col-lg-12 element custom-box'><strong>NH3:</strong> <span style='color: red;'>" + nh3state + "</span></div>" +
+                        "<div class='col-lg-12 element custom-box'><strong>CH4:</strong> <span style='color: red;'>" + ch4state + "</span></div>" +
+                        "<div class='col-lg-12 element custom-box'><strong>pH:</strong> <span style='color: red;'>" + pHstate + "</span></div>" +
+                        "<div class='col-lg-12 element custom-box'><strong>Turbidity:</strong> <span style='color: red;'>" + turstate + "</span></div></h4>";
+            // Append the paragraph to the dynamicContent div
+            paragraph.innerHTML = checkStateData
+            dynamicContent.appendChild(paragraph);
+            
+            if (checkStateData.includes("not safe") || checkStateData.includes("too high")) {
+                console.log("The word 'unsafe' is present in the HTML content.");
+                sendEmail()
+            } else {
+                console.log("The word 'unsafe' is not present in the HTML content.");
+            }
+
+
+        }
+    });
+    
+
+    function sendEmail(){
+        // AJAX request to call the Django view
+        $.ajax({
+            url: '/send_email/',
+            type: 'GET',
+            success: function(response) {
+                console.log('Email sent');  // Handle the response
+            },
+            error: function(xhr, status, error) {
+                console.error(error);  // Handle errors
+            }
+        });
+    
+    }
+}
+
+//=====================================Visual Representation============================
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+    body_parts = [
+        ['normal','head,lungs'],
+        [ 'respiratory', 'lungs'],
+        [ 'cardiovascular', 'heart'],
+        [ 'neurological', 'nerves'],
+        [ 'diabetes', 'abdomen'],
+        [ 'obesity', 'muscles'],
+        [ 'autoimmune', 'any'],
+        [ 'chronic kidney disorder', 'kidney'],
+        [ 'genetics', 'any'],
+        [ 'liver disease', 'liver'],
+        [ 'aging', 'all'],
+        [ 'pregnancy', 'uterus'],
+        [ 'mental health', 'brain'],
+        [ 'sleep disorder', 'brain'],
+        [ 'neuromuscular', 'nerves'],
+        [ 'skin disorder', 'skin'],
+        [ 'gastroentritis', 'small intestine']
+    ]
+
+    function getLinesFromDisease(disease) {
+        
+        if(disease=='normal') {
+            head();
+            lungs();
+            abdomen();
+        } else if(disease=='respiratory') {
+            lungs();
+        } else if(disease=='cardiovascular') {
+            heart();
+        } else if(disease=='neurological') {
+            leg();
+            arm();
+            thigh();
+        } else if(disease=='diabetes') {
+            abdomen();
+        } else if(disease== 'obesity') {
+            leg();
+            arm();
+            thigh();
+        } else if(disease=='autoimmuno') {
+            leg();
+            arm();
+            thigh();
+            head();
+        } else if(disease=='kidney') {
+            kidney();
+        } else if(disease=='genetics') {
+            leg();
+            arm();
+            thigh();
+        } else if(disease=='liver') {
+            abdomen();
+        } else if(disease=='aging') {
+            leg();
+            arm();
+            thigh();
+            eye();
+        } else if(disease=='pregnancy') {
+            abdomen();
+        } else if(disease=='mental health') {
+            head();
+        } else if(disease=='sleep') {
+            head();
+        } else if(disease=='neuromuscular') {
+            leg();
+            arm();
+            thigh();
+            head();
+        } else if(disease=='skin') {
+            skin();
+        } else if(disease=='gastrointestinal') {
+            abdomen();
+        }
+    }
+
+    function drawImage() {
+        var img = new Image();
+        img.onload = function () {
+            // Reduce canvas size by 50 pixels in both width and height
+            canvas.width = img.width - 50;
+            canvas.height = img.height - 50;
+
+            ctx.drawImage(img, 25, 25, img.width - 50, img.height - 50);
+        };
+        img.src = 'https://easydrawingart.com/wp-content/uploads/2019/08/How-to-draw-a-human-2.jpg'; // Replace with the path to your human figure image
+    }
+
+    function clearLines() {
+        var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.putImageData(imageData, 0, 0);
+    }
+
+    function head() {
+        drawHorizontalLineOnCanvas(400, 60, 220); // head
+    }
+
+    function eye() {
+        drawHorizontalLineOnCanvas(400, 85, 220);
+    }
+
+    function throat() {
+        drawHorizontalLineOnCanvas(380,140,220);
+    }
+
+    function heart() {
+        drawHorizontalLineOnCanvas(410,215,220); 
+    }
+
+    function lungs() {
+        drawHorizontalLineOnCanvas(400,240,220); 
+    }
+
+    function arm() {
+        drawHorizontalLineOnCanvas(470,270,220);
+    }
+
+
+    function abdomen() {
+        drawHorizontalLineOnCanvas(370,320,250);
+    }
+
+    function skin() {
+        drawHorizontalLineOnCanvas(475,360,250);
+    }
+
+    function kidney() {
+        drawHorizontalLineOnCanvas(440,360,250);
+    }
+
+    function thigh() {
+        drawHorizontalLineOnCanvas(430, 455, 220);
+    }
+
+    function leg() {
+        drawHorizontalLineOnCanvas(420,630,220);
+    }
+
+    drawImage(); //the human figure
+
+    function drawHorizontalLine(x, y, length,label) {
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x + length, y);
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        ctx.font = "bold 20px Arial";
+        ctx.fillStyle = "maroon"; 
+        ctx.fillText("part affected", x + length / 2 - ctx.measureText("part affected").width / 2, y - 5);
+        
+    }
+
+    function drawHorizontalLineOnCanvas(x, y, length) {
+        // coordinates gotta be within the canvas boundaries
+        if (x >= 0 && x + length <= canvas.width && y >= 0 && y <= canvas.height) {
+            drawHorizontalLine(x, y, length);
+        } else {
+            console.error("Invalid coordinates. Line not drawn.");
+        }
+    }
+
+
+//============================Fire Base==============================================//
+
+function submitBlog() {
+    const title = document.getElementById('title').value;
+    const data = document.getElementById('data').value;
+    console.log(title + " " + data)
+
+    const blogRef = database.ref('blog_details');
+
+    function getTodaysDate() {                  
+        const today = new Date();
+        const year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let day = today.getDate();
+
+        // Pad single-digit months and days with leading zeros
+        month = month < 10 ? `0${month}` : month;
+        day = day < 10 ? `0${day}` : day;
+
+        const formattedDate = `${year}-${month}-${day}`;
+        return formattedDate;
+    }
+
+    blogRef.push({
+      title: title,
+      date:getTodaysDate(),
+      data: data
+    });
+
+    document.getElementById('title').value = '';
+    document.getElementById('data').value = '';
+
+    alert('Blog submitted successfully!');
+}
+
+
+
+const blogList = document.getElementById('comm1');
+const blogRef = database.ref('blog_details');
+
+// Query the database to get the last 10 records
+blogRef.orderByChild('date').limitToLast(3).on('value', (snapshot) => {
+    blogList.innerHTML = ''; 
+
+    snapshot.forEach((childSnapshot) => {
+        const blogData = childSnapshot.val();
+        const listItem = document.createElement('li');
+        // Extracting values from blogData
+        const retrievedTitle = blogData.title;    // title
+        const retrievedData = blogData.data;     // data
+        const retrievedDate = blogData.date;     // date
+        listItem.innerHTML = `<li><div class="item"><div class="text-content"><h4>${retrievedTitle}</h4><span>${retrievedDate}</span><p>${retrievedData}</p></div></div></li><br>`;
+        // Insert the new list item at the beginning of the list
+        blogList.insertBefore(listItem, blogList.firstChild);
+    });
+});
+
+
+
+
+
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+  
+  
+</body>
+</html>
